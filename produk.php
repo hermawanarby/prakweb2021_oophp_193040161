@@ -6,8 +6,8 @@ class Produk {
          $penerbit = "penerbit",
          $harga = 0;
   
-  public function sayHello() {
-    return "Hello World!";
+  public function getLabel() {
+    return "$this->penulis, $this->penerbit";
   }
 }
 
@@ -26,6 +26,4 @@ $produk3->penulis = "Masashi Kishimoto";
 $produk3->penerbit = "Shonen Jump";
 $produk3->harga = 30000;
 
-echo "Komik : $produk3->penulis, $produk3->penulis";
-echo "<br>";
-echo $produk3->sayHello();
+echo $produk3->getLabel();
